@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-size-h2: 2rem;
+    --font-size-label: 0.95rem;
+    --font-size-input: 0.85rem;
+    --main-bg: #dcb;
+}
+
+body {
+    background-color: var(--main-bg);
+}
