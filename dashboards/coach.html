@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/dashboard/coach.css">
+  <title>Dashboard Coach</title>
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="sticky-top shadow-sm navbar-user">
+    <nav class="navbar navbar-expand-lg container">
+
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/images/logo.png" alt="logo de la compañia" width="90">
+        </a>
+
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-user me-1"></i>Perfil
+            </a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="nav-link text-white fw-bold" href="#">
+              <i class="fa-solid fa-right-from-bracket me-1"></i>Cerrar sesión
+            </a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- NAV -->
+    <ul class="nav nav-tabs" role="tablist">
+
+      <li class="nav-item">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#inicio">
+          <i class="fa-solid fa-house me-2"></i>Inicio
+        </button>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#alumnos">
+          <i class="fa-solid fa-users me-2"></i>Alumnos
+        </button>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#clases">
+          <i class="fa-solid fa-dumbbell me-2"></i>Clases
+        </button>
+      </li>
+
+      <li class="nav-item">
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#horarios">
+          <i class="fa-solid fa-calendar me-2"></i>Horarios
+        </button>
+      </li>
+
+    </ul>
+
+    <div class="tab-content p-4 border border-top-0 rounded-bottom">
+
+      <!-- INICIO -->
+      <div class="tab-pane fade show active" id="inicio">
+
+        <h2 class="fw-bold">Bienvenido Coach 👋</h2>
+
+        <div class="row mt-4 g-3">
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <h5>Total Alumnos</h5>
+              <h2 class="text-primary">28</h2>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <h5>Clases Activas</h5>
+              <h2 class="text-success">6</h2>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <h5>Horas Semanales</h5>
+              <h2 class="text-dark">14h</h2>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ALUMNOS -->
+      <div class="tab-pane fade" id="alumnos">
+
+        <h4 class="mb-3">Lista de Alumnos</h4>
+
+        <div class="table-responsive">
+          <table class="table table-hover">
+
+            <thead class="table-dark">
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+                <th>Clase</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Juan Pérez</td>
+                <td>juan@mail.com</td>
+                <td>CrossFit</td>
+              </tr>
+              <tr>
+                <td>Camila Soto</td>
+                <td>camila@mail.com</td>
+                <td>Yoga</td>
+              </tr>
+              <tr>
+                <td>Diego Ramírez</td>
+                <td>diego@mail.com</td>
+                <td>Funcional</td>
+              </tr>
+              <tr>
+                <td>Fernanda Díaz</td>
+                <td>fer@mail.com</td>
+                <td>Spinning</td>
+              </tr>
+              <tr>
+                <td>Matías Rojas</td>
+                <td>matias@mail.com</td>
+                <td>HIIT</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+
+      </div>
+
+      <!-- CLASES -->
+      <div class="tab-pane fade" id="clases">
+
+        <div class="row g-3">
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <i class="fa-solid fa-bolt text-warning fa-2x mb-2"></i>
+              <h5>HIIT Power</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <i class="fa-solid fa-heart-pulse text-success fa-2x mb-2"></i>
+              <h5>Yoga Flow</h5>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card shadow-sm text-center p-3">
+              <i class="fa-solid fa-dumbbell text-primary fa-2x mb-2"></i>
+              <h5>Cross Training</h5>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- HORARIOS -->
+      <div class="tab-pane fade" id="horarios">
+
+        <h4 class="mb-3">Horarios Semanales</h4>
+
+        <div class="list-group">
+
+          <div class="list-group-item">
+            Funcional – Lunes – 19:00 – 12 alumnos
+          </div>
+
+          <div class="list-group-item">
+            CrossFit – Miércoles – 18:00 – 10 alumnos
+          </div>
+
+          <div class="list-group-item">
+            Yoga – Viernes – 20:00 – 14 alumnos
+          </div>
+
+          <div class="list-group-item">
+            HIIT – Martes – 17:00 – 8 alumnos
+          </div>
+
+          <div class="list-group-item">
+            Spinning – Jueves – 18:30 – 11 alumnos
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
