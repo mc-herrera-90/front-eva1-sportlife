@@ -12,7 +12,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <header class="bg-body-tertiary sticky-top shadow-sm" style="margin-bottom: 130px !important;">
+  <header class="bg-body-tertiary sticky-top shadow-sm" style="margin-bottom: 150px !important;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary container">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -58,64 +58,91 @@
     </nav>
   </header>
   <main class="flex-grow-1 flex-grow-1 d-flex align-items-center justify-content-center">
-    <form action="#" onsubmit="return false;" class="position-relative col-12 col-md-6 col-xl-4 col-xxl-3 card"
+
+
+    <div class="position-relative col-12 col-md-6 col-xl-5 col-xxl-4 card p-3 pt-4 p-xl-5"
       style="--bs-card-bg: #f2ede7">
       <img src="../assets/images/logo.png" alt="logo de la compañia" id="auth-brand" class="position-absolute start-50"
-        style="top: -15px; transform: translate(-50%, -50%)">
+        style="top: -20px; transform: translate(-50%, -50%)">
+
       <h2 class="card-title text-center">Registro</h2>
-      <div class="input-box">
-        <label for="correo">Nombre:</label>
-        <input type="name" name="correo" id="correo" placeholder="Ingresa tu nombre">
+      <div class="form-check form-switch my-3">
+        <input class="form-check-input" type="checkbox" id="demo-validation">
+        <label class="form-check-label" for="demo-validation">
+          Mostrar mensajes
+        </label>
       </div>
-      <div class="input-box">
-        <label for="nacimiento">Fecha de nacimiento</label>
-        <input type="text" id="nacimiento" name="nacimiento" placeholder="DD/MM/AAAA" onfocus="this.type='date'"
-          onblur="if(!this.value)this.type='text'">
+      <div class="alert alert-success success-feedback mt-3 is-valid d-none">
+        Usuario registrado correctamente.
       </div>
+      <form action="#" onsubmit="return false;" class="w-100">
 
-      <div class="input-box">
-        <label for="correo">Email:</label>
-        <input type="email" name="correo" id="correo" placeholder="Ej: jperez@correo.cl" required>
-      </div>
+        <div class="input-box">
+          <label for="correo">Nombre:</label>
+          <input type="name" name="correo" id="correo" placeholder="Ingresa tu nombre" class="form-control">
+          
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-user-xmark me-1"></i> El nombre debe tener al menos 3 caracteres</span>
+        </div>
+        <div class="input-box">
+          <label for="nacimiento">Fecha de nacimiento</label>
+          <input type="text" id="nacimiento" name="nacimiento" placeholder="DD/MM/AAAA" onfocus="this.type='date'"
+            onblur="if(!this.value)this.type='text'" class="form-control">
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-calendar-xmark me-1"></i> Fecha inválida</span>
+        </div>
 
-      <div class="input-box">
-        <label for="contrasenia">Contraseña</label>
-        <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña" required>
-      </div>
+        <div class="input-box">
+          <label for="correo">Email:</label>
+          <input type="email" name="correo" id="correo" placeholder="Ej: jperez@correo.cl" class="form-control">
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-envelope me-1"></i> Correo inválido</span>
+        </div>
 
-      <div class="input-box">
-        <label for="deporte">¿Practicas algún deporte?</label>
+        <div class="input-box">
+          <label for="contrasenia">Contraseña</label>
+          <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña"
+            class="form-control">
+        </div>
 
-        <select name="deporte" id="deporte">
-          <option value="" disabled selected>
-            Selecciona un deporte
-          </option>
+        <div class="input-box">
+          <label for="contrasenia2">Confirmar Contraseña</label>
+          <input type="password" name="contrasenia2" id="contrasenia2" placeholder="Confirma tu contraseña"
+            class="form-control">
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-triangle-exclamation me-1"></i> Las contraseñas no coinciden</span>
+        </div>
+        <div class="input-box">
+          <label for="deporte">¿Practicas algún deporte?</label>
 
-          <option value="futbol">Fútbol</option>
-          <option value="basketball">Basketball</option>
-          <option value="tenis">Tenis</option>
-          <option value="running">Running</option>
-          <option value="natacion">Natación</option>
-          <option value="ciclismo">Ciclismo</option>
-          <option value="gym">Gimnasio</option>
-          <option value="voleibol">Voleibol</option>
-          <option value="padel">Pádel</option>
-          <option value="ninguno">Ninguno</option>
-        </select>
-      </div>
+          <select name="deporte" id="deporte" class="form-select">
+            <option value="" disabled selected>
+              Selecciona un deporte
+            </option>
 
-      <div class="input-box">
-        <label for="actividad">¿Qué tipo de actividad le interesa?</label>
-        <input type="name" name="actividad" id="correo" placeholder="Por ejemplo: competir">
-      </div>
+            <option value="futbol">Fútbol</option>
+            <option value="basketball">Basketball</option>
+            <option value="tenis">Tenis</option>
+            <option value="running">Running</option>
+            <option value="natacion">Natación</option>
+            <option value="ciclismo">Ciclismo</option>
+            <option value="gym">Gimnasio</option>
+            <option value="voleibol">Voleibol</option>
+            <option value="padel">Pádel</option>
+            <option value="ninguno">Ninguno</option>
+          </select>
+        </div>
 
-      <div class="submit-box">
-        <button type="submit">Crear cuenta</button>
-      </div>
-      <div class="links-box">
-        <span>¿Ya tienes una cuenta? <a href="./login.html">Iniciar sesión</a></span>
-      </div>
-    </form>
+        <div class="input-box">
+          <label for="actividad">¿Qué tipo de actividad le interesa?</label>
+          <input type="name" name="actividad" id="correo" placeholder="Por ejemplo: competir" class="form-control">
+        </div>
+
+        <div class="submit-box">
+          <button type="submit">Crear cuenta</button>
+        </div>
+        <div class="links-box">
+          <span>¿Ya tienes una cuenta? <a href="./login.html">Iniciar sesión</a></span>
+        </div>
+      </form>
+
+    </div>
 
   </main>
   <footer class="bg-dark text-light pt-4 pb-3 mt-5" id="contacto">
@@ -124,7 +151,7 @@
 
         <div class="col-md-4 mb-3">
           <h5 class="fw-bold">SportLife Club</h5>
-          <p class="text-secondary">
+          <p style="color: var(--bs-warning-bg-subtle);">
             Tu espacio para entrenar, mejorar tu salud y alcanzar tus objetivos deportivos.
           </p>
         </div>
@@ -162,7 +189,7 @@
 
       <hr class="border-secondary">
 
-      <div class="text-center text-secondary">
+      <div class="text-center" style="color: var(--bs-warning-bg-subtle);">
         <small>
           &copy; 2026 SportLife Club. Todos los derechos reservados.
         </small>
