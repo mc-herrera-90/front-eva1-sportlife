@@ -68,7 +68,7 @@
 
   </header>
   <!-- BOTÓN ABRIR MENÚ -->
-  <button class="btn text-white shadow-sm m-4" style="
+  <button class="btn text-white shadow-sm m-4 position-absolute" style="
     background: linear-gradient(135deg, #0d6efd, #084298);
     border: none;
   " type="button" data-bs-toggle="offcanvas" data-bs-target="#dashboardMenu" aria-controls="dashboardMenu">
@@ -176,15 +176,11 @@
     </div>
 
   </div>
-  <main class="container py-4 my-5">
+  <main class="container py-4 mb-5 mt-3">
 
     <!-- INICIO -->
     <section id="inicio" class="mb-5">
 
-      <h2 class="fw-bold mb-4">
-        <i class="fa-solid fa-house me-2"></i>
-        Inicio
-      </h2>
 
       <div class="row align-items-center g-4">
 
@@ -208,8 +204,45 @@
 
         <div class="col-12 col-lg-6 text-center">
 
-          <img src="../assets/images/training.webp" alt="Entrenamiento" class="img-fluid rounded-4 shadow-sm"
-            style="max-height:320px;object-fit:cover;">
+          <div class="card border-0 shadow-sm">
+
+            <div class="card-body text-center p-4">
+
+              <img src="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_1280.png" alt="Avatar" width="100"
+                class="rounded-circle mb-3">
+
+              <h4 class="fw-bold">
+                Marco Contreras
+              </h4>
+
+              <p class="text-muted">
+                mcherrera@email.com
+              </p>
+
+              <hr>
+
+              <div class="row g-3">
+
+                <div class="col-12 col-md-6">
+                  <p class="mb-0">
+                    <i class="fa-solid fa-dumbbell me-2"></i>
+                    Fitness
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <p class="mb-0">
+                    <i class="fa-solid fa-calendar me-2"></i>
+                    Miembro desde 2025
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
 
         </div>
 
@@ -220,15 +253,15 @@
     <!-- RESERVAS -->
     <section id="reservas" class="mb-5">
 
+
+      <div class="card border-0 shadow-sm">
+
+        <div class="card-header fw-bold">
       <h2 class="fw-bold mb-4">
         <i class="fa-solid fa-calendar-check me-2"></i>
         Mis Reservas
       </h2>
 
-      <div class="card border-0 shadow-sm">
-
-        <div class="card-header fw-bold">
-          Reservas Activas
         </div>
 
         <div class="table-responsive">
@@ -300,7 +333,7 @@
     <!-- CLASES -->
     <section id="clases" class="mb-5">
 
-      <h2 class="fw-bold mb-4">
+      <h2 class="fw-bold mb-4 text-center">
         <i class="fa-solid fa-dumbbell me-2"></i>
         Clases Disponibles
       </h2>
@@ -383,62 +416,6 @@
 
     </section>
 
-    <!-- PERFIL -->
-    <section id="perfil">
-
-      <h2 class="fw-bold mb-4">
-        <i class="fa-solid fa-user me-2"></i>
-        Mi Perfil
-      </h2>
-
-      <div class="row justify-content-center">
-
-        <div class="col-12 col-md-8 col-lg-6">
-
-          <div class="card border-0 shadow-sm">
-
-            <div class="card-body text-center p-4">
-
-              <img src="https://cdn.pixabay.com/photo/2016/03/31/19/58/avatar-1295430_1280.png" alt="Avatar" width="100"
-                class="rounded-circle mb-3">
-
-              <h4 class="fw-bold">
-                Marco Contreras
-              </h4>
-
-              <p class="text-muted">
-                mcherrera@email.com
-              </p>
-
-              <hr>
-
-              <div class="row g-3">
-
-                <div class="col-12 col-md-6">
-                  <p class="mb-0">
-                    <i class="fa-solid fa-dumbbell me-2"></i>
-                    Fitness
-                  </p>
-                </div>
-
-                <div class="col-12 col-md-6">
-                  <p class="mb-0">
-                    <i class="fa-solid fa-calendar me-2"></i>
-                    Miembro desde 2025
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
 
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
