@@ -8,12 +8,13 @@
   <!-- Font Awesome  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/index.css">
   <title>Home</title>
 </head>
 
 <body>
-  <header class="bg-body-tertiary sticky-top shadow-sm">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+  <header class="sticky-top shadow-sm navbar-index">
+    <nav class="navbar navbar-expand-lg container" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="assets/images/logo.png" alt="logo de la compañia" width="90">
@@ -27,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-lg-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link" aria-current="page" href="#">
                 <i class="fa-solid fa-house me-1"></i>
                 Inicio
               </a>
@@ -61,7 +62,7 @@
             </li>
 
             <li class="nav-item ms-lg-2">
-              <a class="btn btn-outline-dark" href="auth/register.html">
+              <a class="nav-link" href="auth/register.html">
                 <i class="fa-solid fa-user-plus me-2"></i>
                 Registrarse
               </a>
@@ -86,8 +87,7 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1600&q=80"
-            class="d-block w-100 banner-img" alt="gym">
+          <img src="assets/images/carousel/01.webp" class="d-block w-100 banner-img" alt="gym">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="fw-bold">Entrena fuerte</h3>
             <p>Disciplina y constancia</p>
@@ -95,8 +95,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1600&q=80"
-            class="d-block w-100 banner-img" alt="running">
+          <img src="assets/images/carousel/02.webp" class="d-block w-100 banner-img" alt="running">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="fw-bold">Supera tus límites</h3>
             <p>Cada día cuenta</p>
@@ -124,9 +123,92 @@
       </button>
 
     </div>
-    <section id="planes" class="container my-5 py-5">
+    <section class="py-0 overflow-hidden container">
+
+      <div class="container text-center mb-4">
+        <h2 class="fw-bold display-4 text-uppercase">Entrena. Supera. Evoluciona.</h2>
+        <p class="text-muted fs-5 mt-3">
+          Todo lo que necesitas para alcanzar tus objetivos.
+        </p>
+      </div>
+
+      <div class="benefits-slider py-5">
+
+        <div class="benefits-track">
+
+          <!-- Grupo 1 -->
+          <div class="benefit-item">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span>Equipamiento Moderno</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-user-group"></i>
+            <span>Coaches Certificados</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Bienestar Integral</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Resultados Reales</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Más Energía</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-fire"></i>
+            <span>Quema Calorías</span>
+          </div>
+
+          <!-- Duplicados para loop infinito -->
+          <div class="benefit-item">
+            <i class="fa-solid fa-dumbbell"></i>
+            <span>Equipamiento Moderno</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-user-group"></i>
+            <span>Coaches Certificados</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <span>Bienestar Integral</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-trophy"></i>
+            <span>Resultados Reales</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Más Energía</span>
+          </div>
+
+          <div class="benefit-item">
+            <i class="fa-solid fa-fire"></i>
+            <span>Quema Calorías</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section id="planes" class="container mb-5 py-5">
       <div class="text-center mb-4">
         <h2 class="text-uppercase display-3 fw-bold">Planes</h2>
+        <p class="text-muted fs-5 mb-5">
+          Encuentra el plan ideal para tu estilo de vida y lleva tu rendimiento al siguiente nivel.
+        </p>
       </div>
       <div class="row flex-row-reverse g-5">
         <div class="col-12 col-md-6 col-xl-4">
@@ -229,61 +311,58 @@
         </div>
       </div>
     </section>
-<section class="container py-5" id="sobre-el-club">
+    <section class="container py-5" id="sobre-el-club">
 
-  <div class="text-center mb-5">
-    <h2 class="fw-bold display-3 text-uppercase">
-      Sobre el Club
-    </h2>
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-3 text-uppercase">
+          Sobre el Club
+        </h2>
 
-    <p class="text-muted fs-5">
-      Más que un gimnasio, un espacio dedicado al bienestar, el deporte y el crecimiento personal.
-    </p>
-  </div>
+        <p class="text-muted fs-5">
+          Más que un gimnasio, un espacio dedicado al bienestar, el deporte y el crecimiento personal.
+        </p>
+      </div>
 
-  <div class="row align-items-center g-5">
+      <div class="row align-items-center g-5">
 
-    <!-- TEXTO -->
-    <div class="col-md-6">
+        <!-- TEXTO -->
+        <div class="col-md-6">
 
-      <h4 class="fw-bold mb-3">
-        <i class="fa-solid fa-landmark me-2 text-primary"></i>
-        Historia
-      </h4>
-      <p class="text-muted mb-4">
-        SportLife nació con el propósito de promover un estilo de vida saludable a través del deporte y la actividad física.
-      </p>
+          <h4 class="fw-bold mb-3">
+            <i class="fa-solid fa-landmark me-2"></i>
+            Historia
+          </h4>
+          <p class="text-muted mb-4">
+            SportLife nació con el propósito de promover un estilo de vida saludable a través del deporte y la actividad
+            física.
+          </p>
 
-      <h4 class="fw-bold mb-3">
-        <i class="fa-solid fa-bullseye me-2 text-success"></i>
-        Misión
-      </h4>
-      <p class="text-muted mb-4">
-        Brindar una experiencia integral de entrenamiento con instalaciones modernas y profesionales capacitados.
-      </p>
+          <h4 class="fw-bold mb-3">
+            <i class="fa-solid fa-bullseye me-2 text-danger"></i>
+            Misión
+          </h4>
+          <p class="text-muted mb-4">
+            Brindar una experiencia integral de entrenamiento con instalaciones modernas y profesionales capacitados.
+          </p>
 
-      <h4 class="fw-bold mb-3">
-        <i class="fa-solid fa-eye me-2 text-warning"></i>
-        Visión
-      </h4>
-      <p class="text-muted">
-        Ser un referente deportivo que impulse el desarrollo físico y personal de la comunidad.
-      </p>
+          <h4 class="fw-bold mb-3">
+            <i class="fa-solid fa-eye me-2"></i>
+            Visión
+          </h4>
+          <p class="text-muted">
+            Ser un referente deportivo que impulse el desarrollo físico y personal de la comunidad.
+          </p>
 
-    </div>
+        </div>
 
-    <!-- IMAGEN -->
-    <div class="col-md-6">
-      <img
-        src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1200&q=80"
-        class="img-fluid rounded shadow"
-        alt="club sport"
-      >
-    </div>
+        <!-- IMAGEN -->
+        <div class="col-md-6">
+          <img src="assets/images/training2.webp" class="img-fluid rounded shadow" alt="club sport">
+        </div>
 
-  </div>
+      </div>
 
-</section>
+    </section>
   </main>
   <!-- Footer -->
   <footer class="bg-dark text-light pt-4 pb-3 mt-5" id="contacto">
@@ -291,7 +370,7 @@
       <div class="row">
 
         <div class="col-md-4 mb-3">
-          <h5 class="fw-bold">SportLife Club</h5>
+          <img src="assets/images/logo.png" alt="logo" width="120" class="mb-2">
           <p style="color: var(--bs-warning-bg-subtle);">
             Tu espacio para entrenar, mejorar tu salud y alcanzar tus objetivos deportivos.
           </p>

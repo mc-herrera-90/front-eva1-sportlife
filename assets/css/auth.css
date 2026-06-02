@@ -5,11 +5,48 @@
       rgba(40, 10, 60, 0.55),
       rgba(10, 5, 20, 0.75)
     ),
-    url('https://cdn.pixabay.com/photo/2026/02/09/21/53/creativecanvasshop-fitness-10114299_1280.png')
-    no-repeat center center;
+    url('https://cdn.pixabay.com/photo/2025/04/20/18/36/exercise-9546022_1280.png')
+    no-repeat center left;
 
-  background-size: cover;
+  background-size: contain;
   min-height: 100vh;
+}
+.welcome-title {
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: .05em;
+
+  text-shadow:
+
+    /* CONTORNO MORADO */
+    -2px -2px 0 #2e1065,
+     0px -2px 0 #2e1065,
+     2px -2px 0 #2e1065,
+
+    -2px  0px 0 #2e1065,
+     2px  0px 0 #2e1065,
+
+    -2px  2px 0 #2e1065,
+     0px  2px 0 #2e1065,
+     2px  2px 0 #2e1065,
+
+    -4px -4px 0 rgba(255,188,33,.9),
+     0px -4px 0 rgba(255,188,33,.9),
+     4px -4px 0 rgba(255,188,33,.9),
+
+    -4px  0px 0 rgba(255,188,33,.9),
+     4px  0px 0 rgba(255,188,33,.9),
+
+    -4px  4px 0 rgba(255,188,33,.9),
+     0px  4px 0 rgba(255,188,33,.9),
+     4px  4px 0 rgba(255,188,33,.9),
+    0 0 8px rgba(255,188,33,.7),
+    0 0 16px rgba(255,188,33,.4),
+
+    0 0 6px rgba(255,255,255,.8),
+
+    0 8px 12px rgba(0,0,0,.25),
+    5px 4px 20px #2e1065;
 }
 
 img#auth-brand {
