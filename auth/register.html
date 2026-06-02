@@ -6,17 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
   <link rel="stylesheet" href="../assets/css/auth.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <title>Registro | SportLife</title>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
-  <header class="bg-body-tertiary sticky-top shadow-sm" style="margin-bottom: 150px !important;">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary container">
+<body class="d-flex flex-column min-vh-100" id="register-body">
+  <header class="sticky-top shadow-sm navbar-index" style="margin-bottom: 150px !important;">
+    <nav class="navbar navbar-expand-lg container">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-          <img src="../assets/images/logo.png" alt="logo de la compañia" width="90">
+          <img src="../assets/images/logo.webp" alt="logo de la compañia" width="90">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -47,7 +48,7 @@
               </a>
             </li>
             <li class="nav-item ms-lg-4">
-              <a class="btn btn-outline-dark" href="./login.html">
+              <a class="nav-link" href="./login.html">
                 <i class="fa-solid fa-right-to-bracket me-1"></i>
                 Iniciar sesión
               </a>
@@ -57,10 +58,9 @@
       </div>
     </nav>
   </header>
-  <main class="flex-grow-1 flex-grow-1 d-flex align-items-center justify-content-center">
+  <main class="py-5">
 
-
-    <div class="position-relative col-12 col-md-6 col-xl-5 col-xxl-4 card p-3 pt-4 p-xl-5"
+    <div class="position-relative col-12 col-md-6 col-xl-5 col-xxl-4 card p-3 pt-4 p-xl-5 mx-auto shadow-border"
       style="--bs-card-bg: #f2ede7">
       <img src="../assets/images/logo.webp" alt="logo de la compañia" id="auth-brand" class="position-absolute start-50"
         style="top: -20px; transform: translate(-50%, -50%)">
@@ -80,20 +80,23 @@
         <div class="input-box">
           <label for="correo">Nombre:</label>
           <input type="name" name="correo" id="correo" placeholder="Ingresa tu nombre" class="form-control">
-          
-          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-user-xmark me-1"></i> El nombre debe tener al menos 3 caracteres</span>
+
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-user-xmark me-1"></i> El nombre
+            debe tener al menos 3 caracteres</span>
         </div>
         <div class="input-box">
           <label for="nacimiento">Fecha de nacimiento</label>
           <input type="text" id="nacimiento" name="nacimiento" placeholder="DD/MM/AAAA" onfocus="this.type='date'"
             onblur="if(!this.value)this.type='text'" class="form-control">
-          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-calendar-xmark me-1"></i> Fecha inválida</span>
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-calendar-xmark me-1"></i> Fecha
+            inválida</span>
         </div>
 
         <div class="input-box">
           <label for="correo">Email:</label>
           <input type="email" name="correo" id="correo" placeholder="Ej: jperez@correo.cl" class="form-control">
-          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-envelope me-1"></i> Correo inválido</span>
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-envelope me-1"></i> Correo
+            inválido</span>
         </div>
 
         <div class="input-box">
@@ -106,7 +109,8 @@
           <label for="contrasenia2">Confirmar Contraseña</label>
           <input type="password" name="contrasenia2" id="contrasenia2" placeholder="Confirma tu contraseña"
             class="form-control">
-          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-triangle-exclamation me-1"></i> Las contraseñas no coinciden</span>
+          <span class="text-danger small mt-1 invalid-feedback"><i class="fa-solid fa-triangle-exclamation me-1"></i>
+            Las contraseñas no coinciden</span>
         </div>
         <div class="input-box">
           <label for="deporte">¿Practicas algún deporte?</label>
