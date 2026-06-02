@@ -12,7 +12,8 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-  <header class="bg-body-tertiary sticky-top shadow-sm">
+
+  <header class="bg-body-tertiary sticky-top shadow-sm mb-0">
     <nav class="navbar navbar-expand-lg bg-body-tertiary container">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
@@ -58,25 +59,58 @@
       </div>
     </nav>
   </header>
-  <main class="flex-grow-1 flex-grow-1 d-flex align-items-center justify-content-center">
-    <form action="../dashboards/user.html" class="position-relative col-12 col-md-6 col-xl-4 col-xxl-3 card" style="--bs-card-bg: #f2ede7">
-      <img src="../assets/images/logo.png" alt="logo de la compañia" id="auth-brand" class="position-absolute start-50" style="top: -15px; transform: translate(-50%, -50%)">
+
+  <main class="flex-grow-1 flex-grow-1 d-flex align-items-center justify-content-center flex-column">
+    <div class="container-fluid py-4 mb-5">
+      <div class="container text-center">
+        <h2 class="fw-bold display-3 text-uppercase">
+          Bienvenido
+        </h2>
+        <p class="mb-0">Inicia sesión para acceder a tu cuenta</p>
+      </div>
+    </div>
+    <form action="../dashboards/user.html" class="position-relative col-12 col-md-6 col-xl-4 col-xxl-3 card p-4 mt-5"
+      style="--bs-card-bg: #f2ede7" id="login" method="post">
+      <img src="../assets/images/logo.png" alt="logo de la compañia" id="auth-brand" class="position-absolute start-50"
+        style="top: -15px; transform: translate(-50%, -50%)">
       <h2 class="card-title text-center">Login</h2>
       <div class="input-box">
         <label for="correo">Email:</label>
-        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" required>
+        <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo" class="form-control">
       </div>
       <div class="input-box">
         <label for="contrasenia">Contraseña</label>
-        <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña" required>
+        <input type="password" name="contrasenia" id="contrasenia" placeholder="Ingresa tu contraseña"
+          class="form-control">
       </div>
       <div class="submit-box">
         <button type="submit">Ingresar</button>
       </div>
-      <div class="links-box">
-        <a href="#">¿Olvidaste tu contraseña?</a>
-        <div class="line">|</div>
-        <a href="registro.html">Registrarse</a>
+      <div class="my-3 d-grid" style="grid-template-columns: 1fr auto 1fr;">
+        <a href="#" class="text-end text-decoration-none pe-3">
+          ¿Olvidaste tu contraseña?
+        </a>
+
+        <span class="text-center">|</span>
+
+        <a href="register.html" class="text-start text-decoration-none ps-3">
+          Registrarse
+        </a>
+      </div>
+      <div class="card-footer text-center">
+        <small class="text-muted d-block mb-2">
+          Accesos rápidos (a dashboard)
+        </small>
+
+        <div class="d-flex justify-content-center gap-2">
+          <a href="../dashboards/coach.html" class="btn btn-outline-primary btn-sm">
+            Coach
+          </a>
+
+          <a href="../dashboards/admin.html" class="btn btn-outline-danger btn-sm">
+            Administrador
+          </a>
+        </div>
       </div>
     </form>
 

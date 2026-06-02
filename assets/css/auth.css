@@ -1,6 +1,3 @@
-header {
-    margin-bottom: calc(var(--font-size-label) - 4rem);
-}
 
 img#auth-brand {
     max-width: 100%;
@@ -8,36 +5,15 @@ img#auth-brand {
     filter: drop-shadow(2px 1px 6px #401);
 }
 
-form {
+.shadow-border {
     box-shadow: 2px 1px 20px #4018, -2px -1px 20px #4013;
-    padding: 2em;
-    width: 100vw;
 }
 
 label {
-    font-size: var(--font-size-label);
     font-weight: 600;
     color: #3d1b6a;
-
 }
 
-input {
-    width: 100%;
-    font-size: var(--font-size-input);
-    padding: 8px;
-    border-radius: 8px;
-    border: 2px solid #d8c3a5;
-    background: #fffaf5;
-    outline: none;
-
-}
-
-input:focus {
-    border-color: #4b1f7a;
-
-    box-shadow:
-        0 0 0 4px rgba(75, 31, 122, 0.15);
-}
 
 button {
     border: none;
@@ -57,11 +33,10 @@ button {
     gap: 5px;
 }
 
-/* @media(min-width: 768px) {
-    form {
-        border-radius: 8px;
-    }
-} */
+.card:has(#demo-validation:checked) .invalid-feedback,
+.card:has(#demo-validation:checked) .is-valid{
+    display: block !important;
+}
 
 @media(hover: hover){
     button:hover {

@@ -9,8 +9,79 @@
     --font-size-label: 0.95rem;
     --font-size-input: 0.85rem;
     --main-bg: #dcb;
+    --secondary: #3d1b6a;
+    --main-color: rgb(36, 3, 54);
+    --family: #0ea5e9;
+    --family-dark: #2563eb;
+    --basic: #6c757d;
+    --basic-dark: #495057;
 }
 
 body {
-    background-color: var(--main-bg);
+    background: linear-gradient(135deg, #ffffff, #f3f4f6);
+}
+
+h2 {
+    color: var(--main-color);
+}
+
+:target h2 {
+    display: inline;
+    background: linear-gradient(transparent 60%, #e4c640 60%);
+    padding: 0 10px;
+}
+
+.banner-img {
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(0.65);
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h3 {
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+
+.btn {
+    border: none;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.btn-premium {
+    background: linear-gradient(135deg, #f1c40f, #f39c12);
+    color: #1a1a1a;
+    padding: 10px 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-familiar {
+    background: linear-gradient(135deg, var(--family), var(--family-dark));
+    color: #fff;
+    padding: 12px;
+    box-shadow: 0 8px 18px rgba(14, 165, 233, 0.35);
+}
+
+.btn-basico {
+    background: linear-gradient(135deg, var(--basic), var(--basic-dark));
+    color: #fff;
+    border-radius: 50px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+    .banner-img {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .banner-img {
+        height: 550px;
+    }
 }

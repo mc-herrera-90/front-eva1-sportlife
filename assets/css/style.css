@@ -6,8 +6,11 @@
 }
 
 
-
-
+#sobre-el-club h2 {
+  display: inline;
+  background: linear-gradient(transparent 60%, #0d6efd 60%);
+  padding: 0 10px;
+}
 
 form {
     box-shadow: 1px 2px 7px #ccc9;
@@ -170,8 +173,3 @@ select option {
     }
 }
 
-@media(hover: hover){
-    button:hover {
-        background: #52248f;
-    }
-}
