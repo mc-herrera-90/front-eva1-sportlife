@@ -103,8 +103,8 @@ main i {
   .hv-primary:hover {
     border-color: 2px solid var(--primary-border-color);
     transform: scale(1.04);
-      box-shadow:
-    4px 8px 25px rgba(74, 25, 153, 0.25);
+    box-shadow:
+      4px 8px 25px rgba(74, 25, 153, 0.25);
   }
 
 }
@@ -113,7 +113,10 @@ main i {
 .circle {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 .hv-primary {
