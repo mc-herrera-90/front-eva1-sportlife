@@ -88,13 +88,7 @@ body {
   animation: benefits-scroll 25s linear infinite;
 }
 
-.benefits-slider:hover .benefits-track {
-  animation-play-state: paused;
-}
 
-/* ===========================
-   ITEMS
-=========================== */
 
 .benefit-item {
   display: flex;
@@ -117,7 +111,6 @@ body {
 }
 
 .benefit-item:hover {
-  transform: translateY(-3px);
 
   border-color: var(--primary);
 
@@ -126,7 +119,6 @@ body {
 }
 
 .benefit-item i {
-  color: var(--primary);
   font-size: 1.25rem;
 }
 
