@@ -1,10 +1,9 @@
 :root {
-  --primary: #22c55e;   /* verde principal */
+  --primary: #22c55e;
   --secondary: #16a34a;
   --dark: #14532d;
   --light: #86efac;
 
-  /* fondos suaves verdes */
   --bg-main: #f6fffa;
   --bg-soft-green: #e9fcef;
 
