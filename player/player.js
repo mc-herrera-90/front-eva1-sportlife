@@ -390,3 +390,32 @@ var resize = function() {
 };
 window.addEventListener('resize', resize);
 resize();
+
+let touchStartX = 0;
+let touchEndX = 0;
+
+// Detectar inicio del toque
+waveform.addEventListener('touchstart', function(e) {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+// Detectar fin del toque
+waveform.addEventListener('touchend', function(e) {
+  touchEndX = e.changedTouches[0].screenX;
+  handleSwipe();
+});
+
+function handleSwipe() {
+  const diff = touchStartX - touchEndX;
+
+  // mínimo para considerar swipe
+  if (Math.abs(diff) < 50) return;
+
+  if (diff > 0) {
+    // swipe izquierda → siguiente canción
+    player.skip('next');
+  } else {
+    // swipe derecha → anterior canción
+    player.skip('prev');
+  }
+}
