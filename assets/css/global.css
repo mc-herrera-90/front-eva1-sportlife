@@ -69,7 +69,6 @@ main i {
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
 
-
 .btn {
   border: none;
   font-weight: 600;
@@ -98,6 +97,13 @@ main i {
   padding: 12px;
 }
 
+a:active,
+a:focus,
+img:focus {
+  border: none;
+  outline: none;
+}
+
 /* Hover */
 @media (hover: hover) {
   .hv-primary:hover {
@@ -113,10 +119,7 @@ main i {
 .circle {
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .hv-primary {
