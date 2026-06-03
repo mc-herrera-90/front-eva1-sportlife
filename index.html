@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="./assets/libs/font-awesome/7.2.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/index.css">
+  <!-- Lightbox 3 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox3@1.1.0/dist/lightbox3.min.css">
   <title>Home</title>
 </head>
 
@@ -110,8 +112,7 @@
         </div>
 
         <div class="carousel-item">
-          <img src="./assets/images/carousel/03.webp"
-            class="d-block w-100 banner-img" alt="sport">
+          <img src="./assets/images/carousel/03.webp" class="d-block w-100 banner-img" alt="sport">
           <div class="carousel-caption d-none d-md-block">
             <h3 class="fw-bold display-4">Vida deportiva</h3>
             <p class="fs-5">Salud y energía</p>
@@ -370,6 +371,121 @@
       </div>
 
     </section>
+    <!-- PLAYER -->
+    <section class="container py-5" id="musicSection">
+
+      <div class="text-center mb-4">
+        <h2 class="fw-bold display-4 text-uppercase">Música de entrenamiento</h2>
+        <p class="text-muted fs-5">
+          Activa el modo energía mientras navegas el sitio.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+          <div id="musicCard" class="card border-0 shadow-lg rounded-4 overflow-hidden position-relative"
+            style="height:160px;" onfullscreenchange="
+          if (!document.fullscreenElement) {
+            this.style.height = '160px';
+          } else {
+            this.style.height = '100vh';
+          }
+        ">
+
+            <!-- BOTÓN FULLSCREEN -->
+            <button class="btn btn-dark btn-sm position-absolute top-0 end-0 m-2 rounded-pill" style="z-index:10;"
+              onclick="
+            const el = document.getElementById('musicCard');
+
+            if (!document.fullscreenElement) {
+              el.requestFullscreen();
+            } else {
+              document.exitFullscreen();
+            }
+          ">
+              ⛶
+            </button>
+
+            <div class="card-body p-0 h-100">
+
+              <iframe src="player/index.html" style="width:100%; height:100%; border:0;" allow="autoplay"></iframe>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+    <!-- GALERÍA -->
+    <section class="container py-5">
+
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-3 text-uppercase">Galería</h2>
+        <p class="text-muted fs-5">
+          Conoce nuestras instalaciones y actividades.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/01.webp" data-lightbox="sportlife" data-caption="Sala de máquimas y pesas">
+              <img src="assets/images/gallery/01.webp" class="w-100 h-100 rounded shadow-sm" style="object-fit: cover;"
+                alt="">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/02.webp" data-lightbox="sportlife"
+              data-caption="Coach comprometidos con tus objetivos">
+              <img src="assets/images/gallery/02.webp" class="w-100 h-100 rounded shadow-sm" alt="">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/03.webp" data-lightbox="sportlife">
+              <img src="assets/images/gallery/03.webp" class="w-100 h-100 rounded shadow-sm" alt="">
+            </a>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/04.webp" data-lightbox="sportlife">
+              <img src="assets/images/gallery/04.webp" class="w-100 h-100 rounded shadow-sm" alt="">
+            </a>
+          </div>
+
+        </div>
+        <!-- PIC 5 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/05.webp" data-lightbox="sportlife">
+              <img src="assets/images/gallery/05.webp" class="w-100 h-100 rounded shadow-sm" alt="">
+            </a>
+          </div>
+
+        </div>
+        <!-- PIC 6  -->
+        <div class="col-md-6 col-lg-4">
+          <div class="ratio ratio-4x3">
+            <a href="assets/images/gallery/06.webp" data-lightbox="sportlife">
+              <img src="assets/images/gallery/06.webp" class="w-100 h-100 rounded shadow-sm" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
   </main>
   <!-- Footer -->
   <footer class="bg-dark text-light pt-4 pb-3 mt-5" id="contacto">
@@ -621,6 +737,7 @@
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <script src="assets/libs/lightbox3/js/lightbox3.min.js"></script>
 </body>
 
 </html>
